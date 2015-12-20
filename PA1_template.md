@@ -136,7 +136,7 @@ head(activity.new)
 par(mfrow = c(2, 1))
 for (type in c("Weekend", "Weekday")) {
   steps.type <- aggregate(steps ~ interval, data = activity.new, subset = activity.new$dayType == type, FUN = mean)
-  plot(steps.type, type = "l", main = type,xlab = "Interval", ylab = "Number of steps" )
+  plot(steps.type, type= "l", main = type,xlab = "Interval", ylab = "Number of steps" )
 }
 ```
 
